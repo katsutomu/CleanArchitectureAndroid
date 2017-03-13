@@ -1,5 +1,6 @@
 package ${packageName}.application;
 
+import ${packageName}.R;
 import ${superClassFqcn};
 import android.os.Bundle;
 <#if includeCppSupport!false>
@@ -14,7 +15,7 @@ public class ${activityClass} extends ${superClass} {
 <#if generateLayout>
         setContentView(R.layout.${layoutName});
 </#if>
-<#include "../../../../common/jni_code_usage.java.ftl">
+<#include "../../../../../activities/common/jni_code_usage.java.ftl">
     }
-<#include "../../../../common/jni_code_snippet.java.ftl">
+<#include "../../../../../activities/common/jni_code_snippet.java.ftl">
 }

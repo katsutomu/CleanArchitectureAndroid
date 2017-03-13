@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <recipe>
-    <#include "../common/recipe_manifest.xml.ftl" />
+    <#include "../../activities/common/recipe_manifest.xml.ftl" />
 
 <#if generateLayout>
     <instantiate from="root/res/layout/simple.xml.ftl"

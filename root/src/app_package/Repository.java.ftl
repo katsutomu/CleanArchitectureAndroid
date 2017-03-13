@@ -1,6 +1,6 @@
 package ${packageName}.dataaccess.repository;
 
-import ${packageName}.domain.repository.${repositoryInterface}
+import ${packageName}.domain.repository.${repositoryInterface};
 
 /**
  * Template Repository
