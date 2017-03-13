@@ -28,6 +28,23 @@
         help="The name of the activity class to create" />
 
     <parameter
+        id="isLauncher"
+        name="Launcher Activity"
+        type="boolean"
+        default="false"
+        visibility="hasActivity"
+        help="If true, this activity will have a CATEGORY_LAUNCHER intent filter, making it visible in the launcher" />
+
+    <parameter
+        id="backwardsCompatibility"
+        name="Backwards Compatibility (AppCompat)"
+        type="boolean"
+        default="true"
+        visibility="hasActivity"
+        help="If false, this activity base class will be Activity instead of AppCompatActivity" />
+
+
+    <parameter
         id="generateLayout"
         name="Generate Layout File"
         type="boolean"
@@ -132,20 +149,6 @@
         default="HogeRepositoryInterface"
         visibility="hasRepository"
         help="The name of the RepositoryInterface to create for the activity" />
-
-    <parameter
-        id="isLauncher"
-        name="Launcher Activity"
-        type="boolean"
-        default="false"
-        help="If true, this activity will have a CATEGORY_LAUNCHER intent filter, making it visible in the launcher" />
-
-    <parameter
-        id="backwardsCompatibility"
-        name="Backwards Compatibility (AppCompat)"
-        type="boolean"
-        default="true"
-        help="If false, this activity base class will be Activity instead of AppCompatActivity" />
 
     <parameter
         id="packageName"
